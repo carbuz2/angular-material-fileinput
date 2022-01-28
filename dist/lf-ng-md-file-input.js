@@ -78,10 +78,11 @@
                 var fileType = scope.lfFileObj.lfFileType;
                 var tagType = scope.lfFileObj.lfTagType;
                 var unKnowClass = scope.lfUnknowClass;
+		var type =   scope.lfFileObj.lfDataUrl.split(':')[1].split(';')[0];  
                 switch(tagType){
                     case 'image': {
                         element.replaceWith(
-                            '<embed src="'+ src+ '" type="' + fileType + '"/>'
+                            '<embed src="'+ src+ '" type="' + type + '"/>'
                         );
                         break;
                     }
