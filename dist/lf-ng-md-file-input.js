@@ -81,7 +81,7 @@
                 switch(tagType){
                     case 'image': {
                         element.replaceWith(
-                            '<img src="' + src + '" />'
+                            '<embed src="'+ src+ '" type="' + fileType + '"/>'
                         );
                         break;
                     }
