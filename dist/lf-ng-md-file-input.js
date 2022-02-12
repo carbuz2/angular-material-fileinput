@@ -23,7 +23,7 @@
     };
 
     var isImageType = function(type,name){
-        return (type.match('image.*') || name.match(/\.(gif|png|jpe?g)$/i)) ? true : false;
+        return (type.match('image.*') || name.match(/\.(gif|pdf|png|jpe?g)$/i)) ? true : false;
     };
 
     var isVideoType = function(type,name){
